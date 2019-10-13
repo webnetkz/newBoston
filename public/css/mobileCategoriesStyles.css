@@ -1,0 +1,17 @@
+div.categoriesMenu>ul {
+
+}
+li.menuList {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+li.blackMenuList {
+    background-color: rgb(240, 240, 240);
+}
+a.nonStyle {
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+}
+
