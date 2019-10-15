@@ -52,10 +52,9 @@
         $destiation_dir = dirname(__FILE__) .'\\files\\'.$res['id'].'/'.$_FILES['file']['name']; 
         // Перемещаем файл в желаемую директорию
         move_uploaded_file($_FILES['file']['tmp_name'], $destiation_dir );
-        // Оповещаем пользователя об успешной загрузке файла
-        $err = '<p class="visibleEr error" onclick="closeError();">Удачная публикация</p>';
+
         // Загрузка в базу данных
-        $path_file = 'files/'.$res['id'].'/'.$_FILES['file']['name']; 
+        $path_file = '../files/'.$res['id'].'/'.$_FILES['file']['name']; 
         $sqlPath = 'INSERT INTO post(path_1, des, rubrics, allText) VALUES("'.$path_file.'", "'.$des.'", "'.$rub.'", "'.$allText.'")';
         $resPath = $pdo->query($sqlPath);
     }
@@ -78,11 +77,11 @@
     <input type="text" name="des" placeholder="Заголовок" class="input">
         <div class="checkBlock">
             <label for="hire">Прокат</label>
-                <input type="checkbox" id="hire" name="rubrics" class="radio" value="hire"/>
+                <input type="checkbox" id="hire" name="rubrics" class="radio" value="Прокат"/>
             <label for="services">Услуги</label>
-                <input type="checkbox" id="services" name="rubrics" class="radio" value="services"/>
+                <input type="checkbox" id="services" name="rubrics" class="radio" value="Услуги"/>
             <label for="goods">Товары</label>
-                <input type="checkbox" id="goods" name="rubrics" class="radio" value="goods"/>    
+                <input type="checkbox" id="goods" name="rubrics" class="radio" value="Товары"/>    
         </div>
         <input type="text" name="allText" class="input" placeholder="Описание" style="margin-top: 10px;">
 

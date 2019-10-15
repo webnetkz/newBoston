@@ -11,12 +11,5 @@
     $path = '../../';
     
     require_once '../../tamplate.php';
-
-    // Получение данных с таблиц постов
-    $sqlPost = 'SELECT * FROM post WHERE rubrics = "hire"';
-    $resPost = $pdo->query($sqlPost);
-    $resPost = $resPost->fetchAll(PDO::FETCH_ASSOC);
-    foreach($resPost as $key => $val) {
-        echo $val['path_1'];
-    }
+    include_once '../../app/post/visiblePost.php';
 ?>
