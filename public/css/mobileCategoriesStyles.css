@@ -15,3 +15,21 @@ a.nonStyle {
     color: rgb(3, 3, 3);
 }
 
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+input.photoBtn {
+    width: 80%;
+    margin-left: 20%;
+    margin-bottom: 15px;
+}
+div.checkBlock {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+input.radio {
+    margin-right: 30px;
+}
+
