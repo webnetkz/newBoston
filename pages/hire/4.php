@@ -11,5 +11,5 @@
     $path = '../../';
     
     require_once '../../tamplate.php';
-    include_once '../../app/post/visiblePost.php';
+    include_once '../../app/post/postHire.php';
 ?>

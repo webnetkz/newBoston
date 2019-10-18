@@ -5,6 +5,9 @@
         background-color: rgb(233, 233, 233);
         display: block;
     }
+    a.non {
+        text-decoration: none;
+    }
 
     /* Header styles */
     header {
@@ -73,7 +76,7 @@
         position: fixed;
         left: 100%;
         height: 100%;
-        width: 30%;
+        width: 50%;
         background-color: rgba(0, 0, 0, 0.3);
         transition-duration: 1s;
     }
@@ -235,11 +238,10 @@
     }
     /* Errors styles */
     p.error {
-        box-sizing: border-box;
         position: fixed;
         top: 0;
-        left: 5%;
-        width: 90%;
+        left: 4%;
+        width: 60%;
         text-align: center;
         color: rgb(0, 0, 0);
         background-color: rgba(255, 255, 255, 1);
@@ -326,5 +328,65 @@
     }
     hr {
         color: rgba(0, 80, 169, 0.5);
+    }
+    .example-1 .form-group{
+        padding: 1em;
+        margin-left: 25%;
+    }
+    .example-1 input[type=file]{
+        outline: 0;
+        opacity: 0;
+        pointer-events: none; 
+        user-select: none;
+        position: absolute;
+    }
+    .example-1 .label{
+        width: 120px;
+        border: 2px solid grey;
+        border-radius: 5px;
+        display: block;
+        padding: 10px;
+        transition: border 300ms ease;
+        cursor: pointer;
+        text-align: center;
+    }
+    .example-1 .label:hover{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        color: white;
+        background-color: rgba(0, 80, 169);
+    }
+    
+    .radio_buttons {
+        margin: 20px 23%;
+        font: 14px Tahoma;
+    }
+    .radio_buttons div {
+        float: left;
+    }
+    .radio_buttons input {
+        position: absolute;
+        left: -9999px;
+    }
+    .radio_buttons label {
+        display: block;
+        margin: 0 0 0 -1px;
+        padding: 8px 10px;
+        border: 1px solid #BBBBBB;
+        background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .12);
+        cursor: pointer;
+    }
+    .radio_buttons input:checked + label {
+        background: white;
+        box-shadow: inset 0 3px 6px rgba(0, 0, 0, .2);
+    }
+    .radio_buttons div:first-child label {
+        margin-left: 0;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+    .radio_buttons div:last-child label {
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
     }
 }

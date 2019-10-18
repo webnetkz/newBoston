@@ -14,16 +14,6 @@ a.nonStyle {
     text-decoration: none;
     color: rgb(3, 3, 3);
 }
-
-h2 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-input.photoBtn {
-    width: 80%;
-    margin-left: 20%;
-    margin-bottom: 15px;
-}
 div.checkBlock {
     width: 100%;
     margin-top: 10px;
@@ -58,4 +48,31 @@ span.allText {
     height: 2.3em;
     overflow: hidden;
     text-overflow: clip;
+}
+
+div.post {
+    width: 100%;
+    margin-top: 2em;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1);
+}
+div.post>img.imgPost {
+    display: block;
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+}
+span.allTextBig {
+    display: block;
+    padding: 10px;
+}
+input.catList {
+    position: relative;
+    width: 50%;
+    left: 25%;
+    top: -11em;
+    text-align: center;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }

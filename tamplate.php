@@ -82,5 +82,6 @@
         <script src="<?=$path?>public/js/menu.js"></script>
         <script src="<?=$path?>public/js/search.js"></script>
         <script src="<?=$path?>public/js/closeError.js"></script>
+        <script src="<?=$path?>public/js/appendCategories.js"></script>
     </body>
 </html>
