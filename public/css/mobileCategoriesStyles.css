@@ -36,7 +36,7 @@ img.imgPost {
     height: 5em;
 }
 span.des {
-    
+    font-weight: 700;
 }
 span.rub {
     float: right;
@@ -47,7 +47,8 @@ span.allText {
     padding: 10px;
     height: 2.3em;
     overflow: hidden;
-    text-overflow: clip;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 div.post {
@@ -60,8 +61,11 @@ div.post {
 div.post>img.imgPost {
     display: block;
     width: 90%;
-    height: 400px;
+    height: 350px;
     margin-left: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 span.allTextBig {
     display: block;
@@ -69,9 +73,9 @@ span.allTextBig {
 }
 input.catList {
     position: relative;
-    width: 50%;
-    left: 25%;
-    top: -11em;
+    top: 31px;
+    width: 100%;
+    left: 0;
     text-align: center;
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);

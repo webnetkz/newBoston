@@ -146,37 +146,37 @@
             </li>
         </a>
         <a href="hire/27.php" class="nonStyle">
-            <li class="menuList">    
+            <li class="menuList blackMenuList">    
                 Книги
             </li>
         </a>
         <a href="hire/28.php" class="nonStyle">
-            <li class="menuList blackMenuList">    
+            <li class="menuList">    
                 Недвижимость
             </li>
         </a>
         <a href="hire/29.php" class="nonStyle">
-            <li class="menuList">    
+            <li class="menuList blackMenuList">    
                 Часы
             </li>
         </a>
         <a href="hire/30.php" class="nonStyle">
-            <li class="menuList blackMenuList">    
+            <li class="menuList">    
                 Телефоны и связь
             </li>
         </a>
         <a href="hire/31.php" class="nonStyle">
-            <li class="menuList">    
+            <li class="menuList blackMenuList">    
                 Животные и зоотовары
             </li>
         </a>
         <a href="hire/32.php" class="nonStyle">
-            <li class="menuList blackMenuList">    
+            <li class="menuList">    
                 Ювелирные изделия
             </li>
         </a>
         <a href="hire/33.php" class="nonStyle">
-            <li class="menuList">    
+            <li class="menuList blackMenuList">    
                 Антиквариат
             </li>
         </a>

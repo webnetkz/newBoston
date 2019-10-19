@@ -146,12 +146,12 @@
         </li>
     </a>
     <a href="services/27.php" class="nonStyle">
-        <li class="menuList">    
+        <li class="menuList blackMenuList">    
             Охранные, аварийные и экстренные службы
         </li>
     </a>
     <a href="services/28.php" class="nonStyle">
-        <li class="menuList blackMenuList">    
+        <li class="menuList">    
             Производство, обслуживание, ремонт техники и оборудования
         </li>
     </a>

@@ -23,8 +23,8 @@
 foreach($resPost as $key => $val) {
         echo '<div class="post">';
             echo '<img src="pages/'.$val['path_1'].'" class="imgPost">';
-            echo '<span class="des">'.$val['des'].'</span>';
-            echo '<span class="rub">'.$val['rubrics'].'</span><hr>';
+            echo '<span class="des">'.$val['des'].'</span><hr>';
+            //echo '<span class="rub">'.$val['rubrics'].'</span>';
             echo '<span class="allTextBig">'.$val['allText'].'</span>';
         echo '</div>';
     }
