@@ -95,6 +95,7 @@
     <input type="text" name="des" placeholder="Заголовок" class="input" value="<?php if(isset($des)){echo $des;}?>">
         
         <script>
+            
             function Hire() {
 
             var bb = document.querySelector('.radio_buttons');
@@ -107,13 +108,51 @@
             inp.setAttribute('id', 'Hire');
 
             bb.appendChild(inp);
-            inp.setAttribute('onclick', '');
+
+            radio1.addEventListener('click', rHire);
+            radio1.removeEventListener('click', Hire);
+            radio3.addEventListener('click', rHire);
+            radio3.removeEventListener('click', Hire);
             }
+        
+            function rHire() {
+                let rInp = document.querySelector('#Hire');
+                if(rInp) {
+                    rInp.remove();
+                }
+                radio1.addEventListener('click', Hire);
+                radio3.addEventListener('click', Hire);
+            }
+
+            function Serv() {
+
+                var bb = document.querySelector('.radio_buttons');
+                let inp = document.createElement('input');
+
+                inp.setAttribute('list', 'catServ');
+                inp.setAttribute('name', 'categories');
+                inp.setAttribute('placeholder', 'Категория');
+                inp.setAttribute('class', 'catList');
+                inp.setAttribute('id', 'Serv');
+
+                bb.appendChild(inp);
+
+                radio2.addEventListener('click', rServ);
+                radio2.removeEventListener('click', Serv);
+            }
+
+                function rServ() {
+                    let rInp = document.querySelector('#Serv');
+                    if(rInp) {
+                        rInp.remove();
+                    }
+                    radio2.addEventListener('click', Serv);
+                }
         </script>
 
         <div class="radio_buttons">
             <div>
-                <input type="radio" name="rubrics" id="radio1" onclick="Hire();" value="Прокат"/>
+                <input type="radio" name="rubrics" id="radio1" value="Прокат"/>
                 <label for="radio1"">Прокат</label>
             </div>
             <div>
@@ -125,6 +164,43 @@
                 <label for="radio3">Товары</label>
             </div>
         </div>
+
+        <script>
+            radio1.addEventListener('click', Hire);
+            radio3.addEventListener('click', Hire);
+            radio2.addEventListener('click', Serv);
+        </script>
+
+        <datalist id="catServ"> 
+            <option>Инженерно-строительные</option> 
+            <option>Промышленные</option> 
+            <option>Бытовые</option> 
+            <option>Туристические</option> 
+            <option>Организация праздников</option>
+            <option>Полиграфия и дизайн</option>
+            <option>Деловые</option>
+            <option>Образования, тренинги</option>
+            <option>Реклама, маркетинг, PR</option>
+            <option>Упаковка</option>
+            <option>Транспортные</option>
+            <option>Риэлторские</option>
+            <option>Логистика и склады</option>
+            <option>Сельское хозяйство</option>
+            <option>Искусство и шоу-бизнеc</option>
+            <option>Сфера IT</option>
+            <option>Коммунальные</option>
+            <option>Телекоммуникаций</option>
+            <option>Организации досуга</option>
+            <option>Скидочные карты и купоны</option>
+            <option>Ритуальные</option>
+            <option>Готовый бизнес</option>
+            <option>Наградная продукция</option>
+            <option>Страхование</option>
+            <option>Медицина, здоровье и красота</option>
+            <option>Защита окружающей среды</option>
+            <option>Охранные, аварийные и экстренные службы</option>
+            <option>Производство, обслуживание, ремонт техники и оборудовани</option>
+        </datalist>
 
         <datalist id="catHire"> 
             <option>Сезонные товары</option> 
