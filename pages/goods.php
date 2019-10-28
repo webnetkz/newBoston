@@ -1,5 +1,7 @@
 <?php
 
+    header('Location: hire.php');
+
     // Файл отладки
     require_once '../app/config/debug.php';
 
