@@ -1,6 +1,6 @@
 <?php
     // Получение данных с таблиц постов
-    $sqlPost = 'SELECT * FROM post WHERE rubrics = "Услуги"';
+    $sqlPost = 'SELECT * FROM post WHERE cat = "'.$title.'" AND rubrics = "Услуги"';
     $resPost = $pdo->query($sqlPost);
     $resPost = $resPost->fetchAll(PDO::FETCH_ASSOC);
     foreach($resPost as $key => $val) {

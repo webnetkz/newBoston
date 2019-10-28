@@ -8,7 +8,12 @@
     a.non {
         text-decoration: none;
     }
-
+    .hidden {
+        display: none;
+    }
+    .visible {
+        display: block;
+    }
     /* Header styles */
     header {
         height: 60px;
@@ -140,6 +145,26 @@
         outline: none;
     }
     /* Index content styles */
+    div.slider {
+        margin-top: 20px;
+        width: 100px;
+        height: 375px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        transform: rotate(-90deg);
+        transform-origin: right top;
+        transform:rotate(-90deg) translateY(-100px);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    div.elemSlider {
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+        width: 100px;
+        height: 100px;
+        transform: rotate(90deg);
+        transform-origin: right top;
+        margin-bottom: 5px;
+    }
     div#indexContent {
         background-color: rgba(0, 0, 0, 0.1);
         background-position: center;

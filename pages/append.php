@@ -8,6 +8,8 @@
 
     if(empty($_SESSION['name'])) {
         header('Location: pages/sign.php');
+    }else{
+        header('Location: ../index.php');
     }
 
     // Переменные

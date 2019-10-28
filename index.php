@@ -26,4 +26,93 @@
             <input type="submit" type="submit" value="Найти" class="indexFormBtn">
         </form>
     </div>
+
+        <br>
+
+    <!-- Flickity HTML init -->
+    <div class="carousel"
+        data-flickity='{ "wrapAround": true, "prevNextButtons": false,
+"pageDots": false}'>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+    </div>
+        <br><br>
+        <div class="carousel"
+        data-flickity='{ "wrapAround": true, "prevNextButtons": false }'>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+    </div>
+        <br><br>
+        <div class="carousel"
+        data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+        <div class="carousel-cell">
+            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+            <p class="scrollText">Автотовары</p>
+        </div>
+    </div>
 </div>
+

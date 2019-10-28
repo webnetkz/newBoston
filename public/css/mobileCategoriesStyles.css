@@ -1,18 +1,7 @@
-div.categoriesMenu>ul {
-
-}
-li.menuList {
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 3px;
-}
-li.blackMenuList {
-    background-color: rgb(240, 240, 240);
-}
-a.nonStyle {
-    text-decoration: none;
-    color: rgb(3, 3, 3);
+button.catList {
+    width: 100%;
+    font-size: 1.4em;
+    padding: 5px;
 }
 div.checkBlock {
     width: 100%;
@@ -80,3 +69,31 @@ input.catList {
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
+
+.carousel {
+    background: #EEE;
+  }
+  
+  .carousel-cell {
+    width: 33%;
+    height: 120px;
+    margin-right: 5px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+  }
+  
+  /* cell number */
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    color: black;
+  }
+  .scrollImg {
+      width: 120px;
+      height: 80px;
+  }
+  .scrollText {
+      text-align: center;
+  }

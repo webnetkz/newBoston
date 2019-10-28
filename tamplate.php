@@ -10,7 +10,12 @@
             <link rel="stylesheet" href="<?=$path?>public/css/mobileIndexStyles.css">
             <link rel="stylesheet" href="<?=$path?>public/css/mobileCategoriesStyles.css">
             <link rel="shortcut icon" href="<?=$path?>public/img/mini_logo.png" type="image/png">
+            
+            <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
             <!-- Description meta -->
+
+            <!-- JavaScript -->
+            <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         </head>
         <body>
         <!-- Append blocks -->
