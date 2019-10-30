@@ -32,87 +32,124 @@
     <!-- Flickity HTML init -->
     <div class="carousel"
         data-flickity='{ "wrapAround": true, "prevNextButtons": false,
-"pageDots": false}'>
+"pageDots": false}' style="margin-bottom: 10px;">
         <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
+            <a href="pages/hire.php" class="non">
+                <img src="public/img/scroll/key.svg" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Прокат</p>
+            </a>
         </div>
         <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
+            <a href="#">
+                <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Автотовары</p>
+            </a>
         </div>
         <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
+            <a href="#">
+                <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Автотовары</p>
+            </a>
         </div>
         <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
+            <a href="#">
+                <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Автотовары</p>
+            </a>
         </div>
         <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
+            <a href="#">
+                <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Автотовары</p>
+            </a>
         </div>
         <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
-        </div>
-    </div>
-        <br><br>
-        <div class="carousel"
-        data-flickity='{ "wrapAround": true, "prevNextButtons": false }'>
-        <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
-        </div>
-        <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
-        </div>
-        <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
-        </div>
-        <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
-        </div>
-        <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
-        </div>
-        <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
+            <a href="#">
+                <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Автотовары</p>
+            </a>
         </div>
     </div>
-        <br><br>
-        <div class="carousel"
-        data-flickity='{ "wrapAround": true }'>
+    <div class="carousel"
+        data-flickity='{ "wrapAround": true, "prevNextButtons": false,
+"pageDots": false}' style="margin-bottom: 10px;">
         <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
+            <a href="pages/services.php" class="non">
+                <img src="public/img/scroll/speak.svg" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Услуги</p>
+            </a>
         </div>
         <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
+            <a href="#">
+                <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Автотовары</p>
+            </a>
         </div>
         <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
+            <a href="#">
+                <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Автотовары</p>
+            </a>
         </div>
         <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
+            <a href="#">
+                <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Автотовары</p>
+            </a>
         </div>
         <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
+            <a href="#">
+                <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Автотовары</p>
+            </a>
         </div>
         <div class="carousel-cell">
-            <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
-            <p class="scrollText">Автотовары</p>
+            <a href="#">
+                <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Автотовары</p>
+            </a>
         </div>
     </div>
+    <div class="carousel"
+        data-flickity='{ "wrapAround": true, "prevNextButtons": false,
+"pageDots": false}' style="margin-bottom: 10px;">
+        <div class="carousel-cell">
+            <a href="pages/goods.php" class="non">
+                <img src="public/img/scroll/cart.svg" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Товары</p>
+            </a>
+        </div>
+        <div class="carousel-cell">
+            <a href="#">
+                <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Автотовары</p>
+            </a>
+        </div>
+        <div class="carousel-cell">
+            <a href="#">
+                <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Автотовары</p>
+            </a>
+        </div>
+        <div class="carousel-cell">
+            <a href="#">
+                <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Автотовары</p>
+            </a>
+        </div>
+        <div class="carousel-cell">
+            <a href="#">
+                <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Автотовары</p>
+            </a>
+        </div>
+        <div class="carousel-cell">
+            <a href="#">
+                <img src="public/img/scroll/1.png" alt="scroll images" class="scrollImg">
+                <p class="scrollText">Автотовары</p>
+            </a>
+        </div>
+    </div>
+
 </div>
 

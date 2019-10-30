@@ -91,9 +91,11 @@ input.catList {
     color: black;
   }
   .scrollImg {
+      margin-top: 5px;
       width: 120px;
-      height: 80px;
+      height: 70px;
   }
   .scrollText {
       text-align: center;
+      margin-top: 10px;
   }
