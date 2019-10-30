@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Окт 29 2019 г., 19:21
+-- Время создания: Окт 30 2019 г., 14:03
 -- Версия сервера: 5.6.41-log
 -- Версия PHP: 5.6.38
 
@@ -1130,26 +1130,26 @@ INSERT INTO `services` (`id`, `title`, `des`) VALUES
 (6, 'Полиграфия и дизайн', 'services_polygraphy'),
 (7, 'Деловые', 'services_buisness'),
 (8, 'Образования, тренинги', 'services_trening'),
-(9, 'Реклама, маркетинг, PR', ''),
-(10, 'Упаковка', ''),
-(11, 'Транспортные', ''),
-(12, 'Риэлторские', ''),
-(13, 'Логистика и склады', ''),
-(14, 'Сельское хозяйство', ''),
-(15, 'Искусство и шоу-бизнеc', ''),
-(16, 'Сфера IT', ''),
-(17, 'Коммунальные', ''),
-(18, 'Телекоммуникаций', ''),
-(19, 'Организации досуга', ''),
-(20, 'Скидочные карты и купон', ''),
-(21, 'Ритуальные', ''),
-(22, 'Готовый бизнес', ''),
-(23, 'Наградная продукция', ''),
-(24, 'Страхование', ''),
-(25, 'Медицина, здоровье и красота', ''),
-(26, 'Защита окружающей среды', ''),
-(27, 'Охранные, аварийные и экстренные службы', ''),
-(28, 'Производство, обслуживание, ремонт техники и оборудования', '');
+(9, 'Реклама, маркетинг, PR', 'services_pr'),
+(10, 'Упаковка', 'services_pack'),
+(11, 'Транспортные', 'services_car'),
+(12, 'Риэлторские', 'services_house'),
+(13, 'Логистика и склады', 'services_logistic'),
+(14, 'Сельское хозяйство', 'services_hoz'),
+(15, 'Искусство и шоу-бизнеc', 'services_show'),
+(16, 'Сфера IT', 'services_it'),
+(17, 'Коммунальные', 'services_com'),
+(18, 'Телекоммуникаций', 'services_tele'),
+(19, 'Организации досуга', 'services_dosug'),
+(20, 'Скидочные карты и купон', 'services_cart'),
+(21, 'Ритуальные', 'services_rip'),
+(22, 'Готовый бизнес', 'services_com_business'),
+(23, 'Наградная продукция', 'services_medal'),
+(24, 'Услуги для домашних животных', 'services_vet'),
+(25, 'Медицина, здоровье и красота', 'services_medical'),
+(26, 'Защита окружающей среды', 'services_okr'),
+(27, 'Охранные, аварийные и экстренные службы', 'services_security'),
+(28, 'Производство, обслуживание, ремонт техники и оборудования', 'services_services');
 
 -- --------------------------------------------------------
 
@@ -1190,6 +1190,82 @@ INSERT INTO `services_buisness` (`id`, `title`) VALUES
 (21, 'Готовый бизнес'),
 (22, 'Услуги телефонии'),
 (23, 'Услуги по обеспечению охраны труда');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_car`
+--
+
+CREATE TABLE `services_car` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `services_car`
+--
+
+INSERT INTO `services_car` (`id`, `title`) VALUES
+(1, 'Услуги перегона транспортных средств'),
+(2, 'Пассажирские перевозки'),
+(3, 'Аренда транспорта'),
+(4, 'Транспортная логистика'),
+(5, 'Ритуальные перевозки'),
+(6, 'Услуги эвакуатора'),
+(7, 'Организация деловых поездок');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_cart`
+--
+
+CREATE TABLE `services_cart` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_com`
+--
+
+CREATE TABLE `services_com` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_com_business`
+--
+
+CREATE TABLE `services_com_business` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_dosug`
+--
+
+CREATE TABLE `services_dosug` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `services_dosug`
+--
+
+INSERT INTO `services_dosug` (`id`, `title`) VALUES
+(1, 'Клубы'),
+(2, 'Прогулки верхом и в экипажах');
 
 -- --------------------------------------------------------
 
@@ -1283,6 +1359,180 @@ INSERT INTO `services_home` (`id`, `title`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Структура таблицы `services_house`
+--
+
+CREATE TABLE `services_house` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `services_house`
+--
+
+INSERT INTO `services_house` (`id`, `title`) VALUES
+(1, 'Продажа, аренда коммерческой недвижимости'),
+(2, 'Продажа, аренда жилой недвижимости'),
+(3, 'Продажа, аренда земельных участков'),
+(4, 'Экспертные услуги по недвижимости'),
+(5, 'Оценка бизнеса и собственности');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_hoz`
+--
+
+CREATE TABLE `services_hoz` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `services_hoz`
+--
+
+INSERT INTO `services_hoz` (`id`, `title`) VALUES
+(1, 'Обработка и переработка пищевых продуктов'),
+(2, 'Ремонт и техническое обслуживание сельхозтехники');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_it`
+--
+
+CREATE TABLE `services_it` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `services_it`
+--
+
+INSERT INTO `services_it` (`id`, `title`) VALUES
+(1, 'Автоматизация бизнеса и производства'),
+(2, 'Настройка и администрирование компьютерных сетей'),
+(3, 'Создание и обслуживание сайтов'),
+(4, 'Восстановление информации'),
+(5, 'Анализ, обработка данных'),
+(6, 'Разработка программного обеспечения'),
+(7, 'Услуги 3D-моделирования'),
+(8, 'Проектирование, монтаж, обслуживание линий связи'),
+(9, 'Аутсорсинг в сфере IT'),
+(10, 'Ремонт и настройка компьютерной и офисной техники'),
+(11, 'Внедрение и сопровождение программного обеспечения'),
+(12, 'Интернет-реклама и маркетинг'),
+(13, 'Компьютерные курсы'),
+(14, 'Консалтинговые услуги в сфере IT'),
+(15, 'Организация доступа к сети интернет'),
+(16, 'Копирайтинг и рерайтинг'),
+(17, 'Обеспечение информационной безопасности');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_logistic`
+--
+
+CREATE TABLE `services_logistic` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `services_logistic`
+--
+
+INSERT INTO `services_logistic` (`id`, `title`) VALUES
+(1, 'Транспортная логистика'),
+(2, 'Складские улуги'),
+(3, 'Службы доставки'),
+(4, 'Аутсорсинг в сфере ВЭД');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_medal`
+--
+
+CREATE TABLE `services_medal` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_medical`
+--
+
+CREATE TABLE `services_medical` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `services_medical`
+--
+
+INSERT INTO `services_medical` (`id`, `title`) VALUES
+(1, 'Услуги салонов красоты'),
+(2, 'Медицинские услуги'),
+(3, 'Восстановительное лечение, профилактика и физиотерапия'),
+(4, 'Санаторно-курортные, оздоровительные учреждения'),
+(5, 'Услуги спортивных учреждений'),
+(6, 'Услуги тренеров, инструкторов'),
+(7, 'Услуги банных комплексов и саун'),
+(8, 'Услуги по созданию имиджа');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_okr`
+--
+
+CREATE TABLE `services_okr` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `services_okr`
+--
+
+INSERT INTO `services_okr` (`id`, `title`) VALUES
+(1, 'Вторичная переработка'),
+(2, 'Утилизация отходов и вредных веществ'),
+(3, 'Лицензирование, допуски и сертификация'),
+(4, 'Услуги в сфере экологии');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_pack`
+--
+
+CREATE TABLE `services_pack` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `services_pack`
+--
+
+INSERT INTO `services_pack` (`id`, `title`) VALUES
+(1, 'Фасовка, упаковка, оформление'),
+(2, 'Изготовление, ремонт, чистка и обработка тары'),
+(3, 'Нанесение изображения на тару, упаковку'),
+(4, 'Складские услуги');
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблицы `services_polygraphy`
 --
 
@@ -1302,6 +1552,33 @@ INSERT INTO `services_polygraphy` (`id`, `title`) VALUES
 (4, 'Услуги изготовления пазлов'),
 (5, 'Распространение печатной продукции'),
 (6, 'Наружная раклама');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_pr`
+--
+
+CREATE TABLE `services_pr` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `services_pr`
+--
+
+INSERT INTO `services_pr` (`id`, `title`) VALUES
+(1, 'Наружная реклама'),
+(2, 'Маркетинговые услуги'),
+(3, 'Интернет-реклама и маркетинг'),
+(4, 'Реклама на радио и телевидении'),
+(5, 'Внутренняя реклама'),
+(6, 'Рекламные агенства'),
+(7, 'Копирайтинг и рерайтинг'),
+(8, 'Реклама на ведеоэкранах'),
+(9, 'Полиграфические услуги'),
+(10, 'Консалтинговые услуги в сфере маркетинга и торговли');
 
 -- --------------------------------------------------------
 
@@ -1336,6 +1613,138 @@ INSERT INTO `services_prom` (`id`, `title`) VALUES
 (15, 'Разработка и изготовление электроники'),
 (16, 'Услуги лесозаготовки и деревообработки'),
 (17, 'Строительство промышленных объектов');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_rip`
+--
+
+CREATE TABLE `services_rip` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `services_rip`
+--
+
+INSERT INTO `services_rip` (`id`, `title`) VALUES
+(1, 'Ритуальные перевозки'),
+(2, 'Организация похорон'),
+(3, 'Кремация'),
+(4, 'Уход за могилами'),
+(5, 'Изготовление надгробий и мемориальных плит');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_security`
+--
+
+CREATE TABLE `services_security` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `services_security`
+--
+
+INSERT INTO `services_security` (`id`, `title`) VALUES
+(1, 'Проектирование, монтаж и обслуживание систем безопасности'),
+(2, 'Услуги охраны и обеспечения безопасности'),
+(3, 'Услуги эвакуатора'),
+(4, 'Проверки на детекторе лжи'),
+(5, 'Установка систем контроля доступа'),
+(6, 'Обеспечение информационной безопасности'),
+(7, 'Техобслуживаение и ремонт огнетушителей');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_services`
+--
+
+CREATE TABLE `services_services` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `services_services`
+--
+
+INSERT INTO `services_services` (`id`, `title`) VALUES
+(1, 'Ремонт, обслуживание компьютерной и офисной техники'),
+(2, 'Ремонт и техническое обслуживание транспорта'),
+(3, 'Установка, обслуживание и ремонт бытовой техники'),
+(4, 'Ремонт и обслуживание электротехнического оборудования'),
+(5, 'Техобслуживание и ремонт огнетушителей'),
+(6, 'Ремонт и обслуживание грузоподъемной техники'),
+(7, 'Ремонт и калибровка инструмента'),
+(8, 'Ремонт и обслуживание медицинской техники'),
+(9, 'Установка, обслуживание и ремонт электроники'),
+(10, 'Производство, монтаж, обслуживание и ремонт торгового оборудования'),
+(11, 'Ремонт и техническое обслуживание садово-парковой техники'),
+(12, 'Ремонт, монтаж и наладка промышленного электротехнического оборудования');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_show`
+--
+
+CREATE TABLE `services_show` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `services_show`
+--
+
+INSERT INTO `services_show` (`id`, `title`) VALUES
+(1, 'Услуги музыкального оформления'),
+(2, 'Услуги светового оформления и пиротехники'),
+(3, 'Изготовление декоративных слепков'),
+(4, 'Карвинг (художественная резьба по овощам и фруктам)'),
+(5, 'Услуги изготовления подарочной и сувенирной продукции'),
+(6, 'Услуги артистов'),
+(7, 'Чайные церемонии'),
+(8, 'Организация и проведение концертов, конкурсов, фестивалей'),
+(9, 'Живопись и графика на заказ'),
+(10, 'Реставрация произведений искусства и антиквариата'),
+(11, 'Услуги танцевальных коллективов'),
+(12, 'Модельные агенства'),
+(13, 'Услуги продюсирования'),
+(14, 'Декорирование интерьеров'),
+(15, 'Аренда оборудования для выставок и шоу-бизнеса'),
+(16, 'Школы танцев'),
+(17, 'Изготовление, ремонт витражей'),
+(18, 'Event маркетинг');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_tele`
+--
+
+CREATE TABLE `services_tele` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `services_tele`
+--
+
+INSERT INTO `services_tele` (`id`, `title`) VALUES
+(1, 'Услуги телефонии'),
+(2, 'Услуги спутникового телевидения'),
+(3, 'Ремонт и обслуживание мобильной техники'),
+(4, 'Услуги доступа в интеренет'),
+(5, 'Услуги call-центра');
 
 -- --------------------------------------------------------
 
@@ -1387,6 +1796,24 @@ INSERT INTO `services_trening` (`id`, `title`) VALUES
 (7, 'Написание рефератов, контрольных, курсовых, дипломных работ'),
 (8, 'Повышение квалификации'),
 (9, 'Семинары');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `services_vet`
+--
+
+CREATE TABLE `services_vet` (
+  `id` int(12) NOT NULL,
+  `title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `services_vet`
+--
+
+INSERT INTO `services_vet` (`id`, `title`) VALUES
+(1, 'Ветеринарные услуги');
 
 -- --------------------------------------------------------
 
@@ -1628,6 +2055,36 @@ ALTER TABLE `services_buisness`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `services_car`
+--
+ALTER TABLE `services_car`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `services_cart`
+--
+ALTER TABLE `services_cart`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `services_com`
+--
+ALTER TABLE `services_com`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `services_com_business`
+--
+ALTER TABLE `services_com_business`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `services_dosug`
+--
+ALTER TABLE `services_dosug`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `services_engineer`
 --
 ALTER TABLE `services_engineer`
@@ -1646,15 +2103,99 @@ ALTER TABLE `services_home`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `services_house`
+--
+ALTER TABLE `services_house`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `services_hoz`
+--
+ALTER TABLE `services_hoz`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `services_it`
+--
+ALTER TABLE `services_it`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `services_logistic`
+--
+ALTER TABLE `services_logistic`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `services_medal`
+--
+ALTER TABLE `services_medal`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `services_medical`
+--
+ALTER TABLE `services_medical`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `services_okr`
+--
+ALTER TABLE `services_okr`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `services_pack`
+--
+ALTER TABLE `services_pack`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `services_polygraphy`
 --
 ALTER TABLE `services_polygraphy`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `services_pr`
+--
+ALTER TABLE `services_pr`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `services_prom`
 --
 ALTER TABLE `services_prom`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `services_rip`
+--
+ALTER TABLE `services_rip`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `services_security`
+--
+ALTER TABLE `services_security`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `services_services`
+--
+ALTER TABLE `services_services`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `services_show`
+--
+ALTER TABLE `services_show`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `services_tele`
+--
+ALTER TABLE `services_tele`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1667,6 +2208,12 @@ ALTER TABLE `services_tourist`
 -- Индексы таблицы `services_trening`
 --
 ALTER TABLE `services_trening`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `services_vet`
+--
+ALTER TABLE `services_vet`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1896,6 +2443,36 @@ ALTER TABLE `services_buisness`
   MODIFY `id` int(12) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
+-- AUTO_INCREMENT для таблицы `services_car`
+--
+ALTER TABLE `services_car`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT для таблицы `services_cart`
+--
+ALTER TABLE `services_cart`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT для таблицы `services_com`
+--
+ALTER TABLE `services_com`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT для таблицы `services_com_business`
+--
+ALTER TABLE `services_com_business`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT для таблицы `services_dosug`
+--
+ALTER TABLE `services_dosug`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT для таблицы `services_engineer`
 --
 ALTER TABLE `services_engineer`
@@ -1914,16 +2491,100 @@ ALTER TABLE `services_home`
   MODIFY `id` int(12) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
+-- AUTO_INCREMENT для таблицы `services_house`
+--
+ALTER TABLE `services_house`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT для таблицы `services_hoz`
+--
+ALTER TABLE `services_hoz`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT для таблицы `services_it`
+--
+ALTER TABLE `services_it`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT для таблицы `services_logistic`
+--
+ALTER TABLE `services_logistic`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT для таблицы `services_medal`
+--
+ALTER TABLE `services_medal`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT для таблицы `services_medical`
+--
+ALTER TABLE `services_medical`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT для таблицы `services_okr`
+--
+ALTER TABLE `services_okr`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT для таблицы `services_pack`
+--
+ALTER TABLE `services_pack`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT для таблицы `services_polygraphy`
 --
 ALTER TABLE `services_polygraphy`
   MODIFY `id` int(12) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
+-- AUTO_INCREMENT для таблицы `services_pr`
+--
+ALTER TABLE `services_pr`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
 -- AUTO_INCREMENT для таблицы `services_prom`
 --
 ALTER TABLE `services_prom`
   MODIFY `id` int(12) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT для таблицы `services_rip`
+--
+ALTER TABLE `services_rip`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT для таблицы `services_security`
+--
+ALTER TABLE `services_security`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT для таблицы `services_services`
+--
+ALTER TABLE `services_services`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT для таблицы `services_show`
+--
+ALTER TABLE `services_show`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
+-- AUTO_INCREMENT для таблицы `services_tele`
+--
+ALTER TABLE `services_tele`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT для таблицы `services_tourist`
@@ -1936,6 +2597,12 @@ ALTER TABLE `services_tourist`
 --
 ALTER TABLE `services_trening`
   MODIFY `id` int(12) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT для таблицы `services_vet`
+--
+ALTER TABLE `services_vet`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT для таблицы `users`
