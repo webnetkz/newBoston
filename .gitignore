@@ -6,9 +6,11 @@
 !public/assets/
 !resources/
 !routes/
+!app/
 
 # and the files within them
 !public/assets/*
 !resources/*
 !routes/*
 !.gitignore
+!app/*
